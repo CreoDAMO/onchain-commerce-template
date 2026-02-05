@@ -1,10 +1,7 @@
 import { createContext, useContext, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { OnchainStoreContextType } from '../types';
-import jacketImage from '../images/jacket.png';
-import airpodsImage from '../images/airpods.png';
-import mugImage from '../images/mug.png';
-import bottleImage from '../images/bottle.png';
+import digitalProductImage from '../images/digital_product.jpg';
 import type { Product } from 'src/types';
 
 const emptyContext = {} as OnchainStoreContextType;
@@ -17,24 +14,24 @@ type OnchainStoreProviderReact = {
 };
 
 const products: Product[] = [
-  { id: 'product1', name: `'BUILDER' JACKET`, price: 0.04, image: jacketImage },
+  { id: 'software1', name: `CRYPTO TRADING BOT PRO`, price: 0.05, image: digitalProductImage },
   {
-    id: 'product2',
-    name: `'DND, I'M BUILDING' AIRPODS`,
-    price: 0.01,
-    image: airpodsImage,
-  },
-  {
-    id: 'product3',
-    name: `'CAFFEINATED TO BUILD' MUG`,
+    id: 'game1',
+    name: `NEON RUNNER: ONCHAIN EDITION`,
     price: 0.02,
-    image: mugImage,
+    image: digitalProductImage,
   },
   {
-    id: 'product4',
-    name: `'HYDRATED TO BUILD' BOTTLE`,
-    price: 0.01,
-    image: bottleImage,
+    id: 'nft1',
+    name: `GENESIS BUILDER NFT`,
+    price: 0.1,
+    image: digitalProductImage,
+  },
+  {
+    id: 'tool1',
+    name: `DEVELOPER UTILITY SUITE`,
+    price: 0.03,
+    image: digitalProductImage,
   },
 ];
 
